@@ -63,7 +63,7 @@ input, textarea, button, select, a {
 	border-radius: 10px;
 }
 
-.panels #text {
+/* .panels #text {
 	background-color:#FFD99D;
 }
 
@@ -73,13 +73,12 @@ input, textarea, button, select, a {
 
 .panels #map {
 	background-color:#B5F6B9;
-}
+} */
 
 #home {
 	display: flex;
   align-items: center;
 	justify-content: center;
-	background-color:#FFFFFF;
 	overflow: hidden;
 }
 
@@ -112,9 +111,10 @@ input, textarea, button, select, a {
 	position: absolute;
 	top: 50%;
 	margin-top: -25px;
-	color: #FFFFFF;
+	color: #ad080e;
 	z-index: 3000;
-	font-size: 50px;
+	font-size: 3em;
+	font-weight: 900;
 	display: flex;
   align-items: center;
   justify-content: center;
