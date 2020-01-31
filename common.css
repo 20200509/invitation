@@ -1,5 +1,5 @@
 /* reset start */
-html, body, div, span, applet, object, iframe, gadget
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -40,7 +40,12 @@ input, textarea, button, select, a {
 
 .invitation {
 	width: 100%;
-	font-size: 18px;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	display: flex;
+  align-items: center;
+	justify-content: center;
+	font-family: 'Nanum Myeongjo', serif;
 }
 
 .panels {
@@ -83,15 +88,18 @@ input, textarea, button, select, a {
 }
 
 #text {
+	display: flex;
+  align-items: center;
+	justify-content: center;
 	text-align: center;
 }
 
 #text h2 {
-	padding: 10%;
+	margin-bottom: 1em;
 }
 
 #text p + p {
-	margin-top: 30px;
+	margin-top: 1.6em;
 }
 
 #text span {
