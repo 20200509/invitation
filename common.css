@@ -40,61 +40,36 @@ input, textarea, button, select, a {
 
 .invitation {
 	width: 100%;
-	font-size: 1.1em;
 	line-height: 1.5em;
-	display: flex;
-  align-items: center;
-	justify-content: center;
 	font-family: 'Nanum Myeongjo', serif;
 }
 
-.panels {
+.wrapper {
 	width: 100%;
 	height: 100%;
-	padding: 3% 0;
-	box-sizing: border-box;
+	max-width: 447px;
 	max-height: 700px;
+	margin: 0 auto;
 }
 
 .panel {
-	position: relative;
-	width: 90%;
-	height: 100%;
-	border-radius: 10px;
-}
-
-/* .panels #text {
-	background-color:#FFD99D;
-}
-
-.panels #photos {
-	background-color:#FFB0B9;
-}
-
-.panels #map {
-	background-color:#B5F6B9;
-} */
-
-#home {
-	display: flex;
-  align-items: center;
-	justify-content: center;
-	overflow: hidden;
-}
-
-#home img {
+	width: 100%;
 	height: 100%;
 }
 
-#text {
+#home, #text, #photos {
 	display: flex;
   align-items: center;
 	justify-content: center;
 	text-align: center;
 }
 
-#text h2 {
-	margin-bottom: 1em;
+#home img {
+	height: 100%;
+}
+
+#home .name {
+	position: absolute;
 }
 
 #text p + p {
@@ -105,19 +80,58 @@ input, textarea, button, select, a {
 	display: block;
 }
 
+#photos li {
+	float: left;
+	width: 8em;
+	height: 8em;
+	background-size: cover !important;
+	margin: 2%;
+	border-radius: 50%;
+}
+
+#photos .img1 {
+	background: url('./img/photo-1.jpg') center center;
+}
+
+#photos .img2 {
+	background: url('./img/photo-2.jpg') center 10%;
+}
+
+#photos .img3 {
+	background: url('./img/photo-3.jpg') center 25%;
+}
+
+#photos .img4 {
+	background: url('./img/photo-4.jpg') center 45%;
+}
+
+#photos .img5 {
+	background: url('./img/photo-5.jpg') center 70%;
+}
+
+#photos .img6 {
+	background: url('./img/photo-6.jpg') center 10%;
+}
+
+#photos .img7 {
+	background: url('./img/photo-7.jpg') center 45%;
+}
+
+#photos .img8 {
+	background: url('./img/photo-8.jpg') 90% 10%;
+}
+
+#photos .img9 {
+	background: url('./img/photo-9.jpg') 60% 10%;
+}
+
 .buttons a {
-	width: 50px;
-	height: 50px;
 	position: absolute;
-	top: 50%;
-	margin-top: -25px;
-	color: #ad080e;
+	bottom: 2%;
+	color: #000000;
 	z-index: 3000;
-	font-size: 3em;
+	font-size: 1.1em;
 	font-weight: 900;
-	display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .prev {
@@ -126,4 +140,8 @@ input, textarea, button, select, a {
 
 .next {
 	right: 3%;
+}
+
+h2 {
+	margin-bottom: 1em;
 }

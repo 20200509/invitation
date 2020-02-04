@@ -4,24 +4,20 @@ window.addEventListener('load', function () {
 	var prev = document.querySelector('.prev')
 	invitation.style.height = window.innerHeight + 'px'
 
-	var flicking = new eg.Flicking('.panels', {
+	var flicking = new eg.Flicking('.wrapper', {
     circular: true,
     gap: 10,
-    renderOnlyVisible: true
+		renderOnlyVisible: true,
+		autoResize: true
 	})
 
-	next.addEventListener('click', function () {
+	next.addEventListener('click', function (e) {
+		e.preventDefault()
 		flicking.next()
 	})
 
-	prev.addEventListener('click', function () {
+	prev.addEventListener('click', function (e) {
+		e.preventDefault()
 		flicking.prev()
 	})
-
-	window.addEventListener('resize', function () {
-		invitation.style.height = window.innerHeight + 'px'
-		flicking.resize()
-	})
-
-	// flicking.addPlugins(new eg.Flicking.plugins.Parallax('.menu', 4))
 })
