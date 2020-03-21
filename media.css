@@ -38,10 +38,18 @@
   html { font-size: 12.5px; }
 }
 
-@media screen and (min-width: 355px) and (max-width: 474px) {
+@media screen and (min-width: 355px) and (max-width: 374px) {
   html { font-size: 12px; }
 }
 
-@media screen and (max-width: 454px) {
+@media screen and (min-width: 341px) and (max-width: 354px) {
   html { font-size: 11.5px; }
+}
+
+@media screen and (min-width: 327px) and (max-width: 340px) {
+  html { font-size: 11px; }
+}
+
+@media screen and (max-width: 326px) {
+  html { font-size: 10.7px; }
 }
