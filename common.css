@@ -42,6 +42,9 @@ input, textarea, button, select, a {
 body {
 	font-family: 'NotoSerifKR', serif;
 	font-size: 1rem;
+	overflow-y: scroll;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
 }
 
 .invitation {
@@ -54,6 +57,10 @@ body {
 	box-sizing: border-box;
 	background: url('./img/background.png') no-repeat top;
 	background-size: 100% 13.5%;
+}
+
+body::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera*/
 }
 
 h1 {
@@ -90,7 +97,7 @@ h2 {
 
 .info-bottom {
 	margin-top: 0.45rem;
-	margin-bottom: 5.75rem;
+	margin-bottom: 6rem;
 	text-align: center;
 	font-size: 0.95rem;
 }
@@ -144,102 +151,77 @@ img.home {
 }
 
 .photo-frame {
-	position: relative;
 	width: 100%;
 	margin-top: 2.2rem;
 	margin-bottom: 10.2rem;
-	overflow: hidden;
-}
-
-.photo-frame:before, .photo-frame:after {
-	position: absolute;
-	top: 0.05rem;
-	bottom: 0.05rem;
-	content: '';
-	width: 0.1rem;
-	height: 100%;
-	background: #fed42a;
-}
-
-.photo-frame:before {left: 7.7rem; }
-.photo-frame:after { right: 7.7rem; }
-
-.col {
-	float: left;
-}
-
-.col2 {
-	margin-left: 1.45rem;
-}
-
-.col3 {
-	margin-left: 1.4rem;
+	display: flex;
+	justify-content: space-between;
 }
 
 .thumbnail {
 	border: 0.1rem solid #fed42a;
 	box-sizing: border-box;
-	width: 7.05rem;
+	width: 7.55rem;
 }
 
 .img1 {
 	background: url('./img/photo-1.jpg') center;
 	height: 5.15rem;
-	background-size: 123% 112%;
+	background-size: 115% 112%;
 }
 
 .img2 {
-	background: url('./img/photo-2.jpg') center 30%;
+	background: url('./img/photo-2.jpg') center 45%;
 	margin-top: 0.7rem;
 	height: 7.8rem;
-	background-size: 103% 140%;
+	background-size: 100% 145%;
 }
 
 .img3 {
-	background: url('./img/photo-3.jpg') center 65%;
+	background: url('./img/photo-3.jpg') center 70%;
 	margin-top: 0.65rem;
 	height: 8.5rem;
-	background-size: 109% 140%;
+	background-size: 105% 140%;
 }
 
 .img4 {
 	background: url('./img/photo-4.jpg') center 13%;
 	height: 9.2rem;
-	background-size: 110% 125%;
+	background-size: 110% 140%;
 }
 
 .img5 {
 	background: url('./img/photo-5.jpg') center 45%;
 	margin-top: 0.85rem;
 	height: 7.05rem;
-	background-size: 104% 150%;
+	background-size: 104% 170%;
 }
 
 .img6 {
 	background: url('./img/photo-6.jpg') center;
 	margin-top: 0.85rem;
 	height: 4.85rem;
-	background-size: 110% 110%;
+	background-size: 110% 125%;
 }
 
 .img7 {
 	background: url('./img/photo-7.jpg') 60% center;
 	height: 7.05rem;
-	background-size: 158% 103%;
+	background-size: 141% 101%;
 }
 
 .img8 {
 	background: url('./img/photo-8.jpg') center 60%;
 	margin-top: 0.65rem;
 	height: 5.95rem;
-	background-size: 133% 110%;
+	background-size: 131% 110%;
 }
 
 .img9 {
 	background: url('./img/photo-9.jpg') center 70%;
 	margin-top: 0.65rem;
 	height: 8.5rem;
-	background-size: 107% 132%;
+	background-size: 101% 132%;
 }
 
 .text-wrapper {
