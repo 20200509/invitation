@@ -40,4 +40,8 @@
 	function preventDefault (e) {
 		e.preventDefault()
 	}
+
+	window.addEventListener('load', function () {
+		window.scrollTo(0, 1)
+	})
 })()
