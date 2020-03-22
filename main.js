@@ -8,23 +8,20 @@
 	el.innerText = result
 
 	// 지도 설정
-	var weddingHall = new kakao.maps.LatLng(37.560310, 126.967112)
-	var map = new kakao.maps.Map(
-		document.getElementById('map'),
-		{ center: weddingHall, level: 4 }
-	)
+	// var weddingHall = new kakao.maps.LatLng(37.560659, 126.967330)
+	// var map = new kakao.maps.Map(
+	// 	document.getElementById('map'),
+	// 	{ center: weddingHall, level: 4 }
+	// )
 
-	new kakao.maps.Marker({
-		position: weddingHall,
-		image: new kakao.maps.MarkerImage(
-			'https://20200509.github.io/invitation/img/marker.png',
-			new kakao.maps.Size(22, 26),
-			{  
-				spriteOrigin: new kakao.maps.Point(10, 0),    
-				spriteSize: new kakao.maps.Size(36, 98)  
-			}
-		)
-	}).setMap(map)
+	// new kakao.maps.Marker({
+	// 	position: weddingHall,
+	// 	image: new kakao.maps.MarkerImage(
+	// 		'https://20200509.github.io/invitation/img/marker.png',
+	// 		new kakao.maps.Size(50, 48),
+	// 		{offset: new kakao.maps.Point(25, 44)}
+	// 	)
+	// }).setMap(map)
 
 	// 사진 클릭
 	var photoFrame = document.getElementById('photo-frame')

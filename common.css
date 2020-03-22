@@ -306,6 +306,9 @@ img.home {
 
 .route {
 	margin-top: 0.25em;
+}
+
+.route a {
 	color: #17ade7;
 }
 
