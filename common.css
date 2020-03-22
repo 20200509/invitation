@@ -297,12 +297,16 @@ img.home {
 }
 
 .map {
-	float: right;
 	width: 20.25rem;
 	height: 13.85rem;
 	box-sizing: border-box;
 	border: 0.1rem solid #17ade7;
 	margin-top: 0.25em;
+}
+
+.route {
+	margin-top: 0.25em;
+	color: #17ade7;
 }
 
 .hide {
