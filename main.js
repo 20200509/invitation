@@ -19,28 +19,25 @@
 	// 사진 클릭
 	var photoFrame = document.getElementById('photo-frame')
 	var photoDetail = document.getElementById('photo-detail')
+	var body = document.getElementsByTagName('body')[0]
+
 	photoFrame.addEventListener('click', function (e) {
 		if (e.target.classList.contains('thumbnail')) {
-			openPhotoDetail()
+			photoDetail.setAttribute('style', 'top: ' + window.pageYOffset + 'px;')
+			body.classList.add('scroll-disabled')
+			body.addEventListener('scroll touchmove mousewheel', preventDefault)
+			photoDetail.classList.remove('hide')
 		}
 	})
 
 	photoDetail.addEventListener('click', function (e) {
-		closePhotoDetail()
+		photoDetail.classList.add('hide')
+		body.classList.remove('scroll-disabled')
+		body.removeEventListener('scroll touchmove mousewheel', preventDefault)
+		photoDetail.removeAttribute('style')
 	})
 
-	function openPhotoDetail () {
-		var body = document.getElementsByTagName('body')[0]
-		
-		photoDetail.setAttribute('style', 'top: ' + window.pageYOffset + 'px;')
-		body.classList.add('scroll-disabled')
-		photoDetail.classList.remove('hide')
-	}
-
-	function closePhotoDetail () {
-		var body = document.getElementsByTagName('body')[0]
-
-		body.classList.remove('scroll-disabled')
-		photoDetail.classList.add('hide')
+	function preventDefault (e) {
+		e.preventDefault()
 	}
 })()
