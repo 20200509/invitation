@@ -48,6 +48,15 @@
 		e.preventDefault()
 	}
 
+	// 꽃가루 효과
+	snowFall.snow(body, {
+		image : './img/flake.png', 
+		minSize: 10,
+		maxSize: 32,
+		minSpeed: 1,
+		maxSpeed: 3
+	})
+
 	window.addEventListener('load', function () {
 		window.scrollTo(0, 30)
 	})
