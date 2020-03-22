@@ -8,13 +8,13 @@
 	el.innerText = result
 
 	// 지도 설정
-	// var container = document.getElementById('map')
-	// var options = {
-	// 	center: new kakao.maps.LatLng(37.560310, 126.967112),
-	// 	level: 3
-	// }
+	var container = document.getElementById('map')
+	var options = {
+		center: new kakao.maps.LatLng(37.560310, 126.967112),
+		level: 3
+	}
 
-	// var map = new kakao.maps.Map(container, options)
+	var map = new kakao.maps.Map(container, options)
 
 	// 사진 클릭
 	var photoFrame = document.getElementById('photo-frame')
