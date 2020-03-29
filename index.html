@@ -66,24 +66,30 @@
 	<h1>PHOTO GALLERY</h1>
 	<div id="photo-frame" class="photo-frame">
 		<div class="col">
-			<div class="thumbnail img1"></div>
-			<div class="thumbnail img2"></div>
-			<div class="thumbnail img3"></div>
+			<div class="thumbnail img1" data-index="1" data-type="landscape"></div>
+			<div class="thumbnail img2" data-index="2" data-type="portrait"></div>
+			<div class="thumbnail img3" data-index="3" data-type="portrait"></div>
 		</div>
 		<div class="col">
-			<div class="thumbnail img4"></div>
-			<div class="thumbnail img5"></div>
-			<div class="thumbnail img6"></div>
+			<div class="thumbnail img4" data-index="4" data-type="portrait"></div>
+			<div class="thumbnail img5" data-index="5" data-type="portrait"></div>
+			<div class="thumbnail img6" data-index="6" data-type="landscape"></div>
 		</div>
 		<div class="col">
-			<div class="thumbnail img7"></div>
-			<div class="thumbnail img8"></div>
-			<div class="thumbnail img9"></div>
+			<div class="thumbnail img7" data-index="7" data-type="landscape"></div>
+			<div class="thumbnail img8" data-index="8" data-type="landscape"></div>
+			<div class="thumbnail img9" data-index="9" data-type="portrait"></div>
 		</div>
 	</div>
 	<!-- PHOTO DETAIL -->
-	<div id="photo-detail" class="photo-detail hide">
-
+	<div id="photo-detail" class="photo-detail">
+		<div class="indicator"><span id="index"></span> / 9</div>
+		<a id="close" class="close" href="#"><img src="./img/close.png"></a>
+		<a id="prev" class="prev" href="#"><img src="./img/prev.png"></a>
+		<a id="next" class="next" href="#"><img src="./img/next.png"></a>
+		<div class="photo-wrapper">
+			<img id="photo">
+		</div>
 	</div>
 	<!-- INFORMATION -->
 	<h1>INFORMATION</h1>
@@ -146,7 +152,7 @@
 </div>
 </body>
 
-<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8d9f9d15be8b32b4963ed6f0701d2c3b"></script>
+<!-- <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8d9f9d15be8b32b4963ed6f0701d2c3b"></script> -->
 <script src="./snowfall.min.js"></script>
 <script src="./main.js"></script>
 </html>
