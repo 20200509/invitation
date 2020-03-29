@@ -75,9 +75,23 @@
 
 	// 꽃가루 효과
 	snowFall.snow(body, {
-		image : './img/flake.png', 
+		image : './img/sparkle6.png', 
+		minSize: 5,
+		maxSize: 10,
+		minSpeed: 1,
+		maxSpeed: 3
+	})
+	snowFall.snow(body, {
+		image : './img/sparkle4.png', 
 		minSize: 10,
-		maxSize: 32,
+		maxSize: 15,
+		minSpeed: 1,
+		maxSpeed: 3
+	})
+	snowFall.snow(body, {
+		image : './img/sparkle1.png', 
+		minSize: 5,
+		maxSize: 20,
 		minSpeed: 1,
 		maxSpeed: 3
 	})
