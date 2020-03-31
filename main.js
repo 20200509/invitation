@@ -1,8 +1,10 @@
 (function () {
 	// D-Day 설정
 	var el = document.getElementById('d-day')
-	var wedding = new Date('2020-05-09')
-	var today = new Date()
+	var now = new Date()
+	var wedding = new Date('2020-05-09 00:00:00')
+	var today = new Date(now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate())
+
 	var gap = today.getTime() - wedding.getTime()
 	var result = Math.ceil(gap / (1000 * 60 * 60 * 24)) * -1
 	el.innerText = result
@@ -80,7 +82,7 @@
 		maxSize: 20,
 		minSpeed: 1,
 		maxSpeed: 3,
-		flakeCount : 5
+		flakeCount : 6
 	})
 	snowFall.snow(body, {
 		image : './img/sparkle2.png', 
@@ -88,7 +90,7 @@
 		maxSize: 15,
 		minSpeed: 1,
 		maxSpeed: 3,
-		flakeCount : 5
+		flakeCount : 6
 	})
 	snowFall.snow(body, {
 		image : './img/sparkle3.png', 
@@ -96,6 +98,6 @@
 		maxSize: 10,
 		minSpeed: 1,
 		maxSpeed: 3,
-		flakeCount : 5
+		flakeCount : 6
 	})
 })()
