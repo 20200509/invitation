@@ -322,17 +322,20 @@ img.home {
 	height: 1.5rem;
 }
 
-.photo-detail .portrait {
+.portrait img {
 	height: 100%;
 }
 
-.photo-detail .landscape {
+.landscape {
+	width: 100%;
+}
+
+.landscape img {
 	width: 100%;
 	height: 20rem;
 }
 
 .photo-detail .photo-wrapper {
-	width: 100%;
 	height: 100vh;
 	display: flex;
   align-items: center;

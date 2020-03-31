@@ -2,8 +2,8 @@
 	// D-Day 설정
 	var el = document.getElementById('d-day')
 	var now = new Date()
-	var wedding = new Date('2020-05-09 00:00:00')
-	var today = new Date(now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate())
+	var wedding = new Date('2020/05/09 00:00:00')
+	var today = new Date(now.getFullYear() + '/' + (now.getMonth() + 1) + '/' + now.getDate())
 
 	var gap = today.getTime() - wedding.getTime()
 	var result = Math.ceil(gap / (1000 * 60 * 60 * 24)) * -1
@@ -29,6 +29,7 @@
 	var body = document.getElementsByTagName('body')[0]
 	var photoFrame = document.getElementById('photo-frame')
 	var photoDetail = document.getElementById('photo-detail')
+	var photoWrapper = document.getElementById('photo-wrapper')
 	var photo = document.getElementById('photo')
 	var index = document.getElementById('index')
 	var prev = document.getElementById('prev')
@@ -43,7 +44,7 @@
 			body.classList.add('show-photo-detail')
 			body.addEventListener('scroll touchmove mousewheel', preventDefault)
 			index.innerText = currIndex
-			photo.className = e.target.dataset.type
+			photoWrapper.className = 'photo-wrapper ' + e.target.dataset.type
 			photo.src = './img/photo-' + currIndex + '.jpg'
 		}
 	})
@@ -58,7 +59,7 @@
 	prev.addEventListener('click', function (e) {
 		e.preventDefault()
 		currIndex = (currIndex === 1) ? 9 : currIndex -= 1
-		photo.className = photoFrame.getElementsByClassName('img' + currIndex)[0].dataset.type
+		photoWrapper.className = 'photo-wrapper ' + photoFrame.getElementsByClassName('img' + currIndex)[0].dataset.type
 		photo.src = './img/photo-' + currIndex + '.jpg'
 		index.innerText = currIndex
 	})
@@ -66,7 +67,7 @@
 	next.addEventListener('click', function (e) {
 		e.preventDefault()
 		currIndex = (currIndex === 9) ? 1 : currIndex += 1
-		photo.className = photoFrame.getElementsByClassName('img' + currIndex)[0].dataset.type
+		photoWrapper.className = 'photo-wrapper ' + photoFrame.getElementsByClassName('img' + currIndex)[0].dataset.type
 		photo.src = './img/photo-' + currIndex + '.jpg'
 		index.innerText = currIndex
 	})
