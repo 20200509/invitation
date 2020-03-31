@@ -3,7 +3,7 @@
 	var el = document.getElementById('d-day')
 	var now = new Date()
 	var wedding = new Date('2020/05/09 00:00:00')
-	var today = new Date(now.getFullYear() + '/' + (now.getMonth() + 1) + '/' + now.getDate())
+	var today = new Date(now.getFullYear() + '/' + (now.getMonth() + 1) + '/' + now.getDate() + ' 00:00:00')
 
 	var gap = today.getTime() - wedding.getTime()
 	var result = Math.ceil(gap / (1000 * 60 * 60 * 24)) * -1
