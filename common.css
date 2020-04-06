@@ -367,6 +367,10 @@ img.home {
 	width: 20.2em;
 }
 
+.text-wrapper .content .space {
+	letter-spacing: -0.02rem;
+}
+
 .step {
 	color: #e83e62;
 	font-size: 0.8rem;
